@@ -1,11 +1,18 @@
 :root {
-  --primary-color: #212121;
-  --akcent-color: #2196f3;
-  --secondary-color: #757575;
+  --primary-text-color: #212121;
+  --akcent-text-color: #2196f3;
+  --secondary-text-color: #757575;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #ececec;
+  --primary-btn-text-color: #ffffff;
+  --akcent-btn-text-color: #000000;
+  --primary-btn-background-color: #2196f3;
+  --akcent-btn-background-color: #ffffff;
 }
 
 .link {
   text-decoration: none;
+  font-style: inherit;
 }
 .list {
   list-style-type: none;
@@ -26,4 +33,127 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+/* ----------------HEADER------------------- */
+.header {
+  background-color: var(--secondary-background-color);
+}
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--akcent-text-color);
+  cursor: pointer;
+}
+.header-logo-text {
+  color: #000000;
+}
+.header-nav-link,
+.header-contact-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+.header-contact-link {
+  color: var(--secondary-color);
+}
+.current,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--akcent-text-color);
+  cursor: pointer;
+}
+/* ----------------HERO------------------- */
+.hero {
+  background-color: var(--primary-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--primary-btn-background-color);
+  color: var(--primary-btn-text-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--akcent-btn-background-color);
+  color: var(--akcent-btn-text-color);
+}
+/* ----------------Tasks------------------- */
+
+. .tasks-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.tasks-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.portfolio {
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team {
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team-item-title {
+}
+.team-item-text {
+}
+.footer {
+}
+.footer-logo {
+}
+.footer-logo-tekst {
+}
+.adress {
+}
+.adress-list {
+}
+.adress-item {
+}
+.adress-item-link {
 }
