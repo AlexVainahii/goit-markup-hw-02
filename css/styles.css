@@ -13,6 +13,7 @@
 .link {
   text-decoration: none;
   font-style: inherit;
+  color: inherit;
 }
 .list {
   list-style-type: none;
@@ -35,6 +36,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 /* ----------------HEADER------------------- */
 .header {
@@ -61,7 +63,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
 }
 .header-contact-link {
   color: var(--secondary-text-color);
@@ -80,7 +82,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
 }
 /* ----------------HERO------------------- */
 .hero {
