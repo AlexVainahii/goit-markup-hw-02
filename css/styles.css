@@ -102,7 +102,7 @@ body {
 }
 /* ----------------Tasks------------------- */
 
-. .tasks-item-title {
+.tasks-item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -117,8 +117,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.portfolio {
-}
+/* ----------------Portfolio------------------- */
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -127,7 +126,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+/* ----------------Team------------------- */
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -138,20 +137,46 @@ body {
 }
 
 .team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 .team-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
+/* ----------------Footer------------------- */
 .footer {
+  background-color: var(--primary-background-color);
 }
 .footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--akcent-text-color);
+  cursor: pointer;
 }
 .footer-logo-tekst {
+  color: #ffffff;
+}
+
+.adress-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .adress {
-}
-.adress-list {
-}
-.adress-item {
-}
-.adress-item-link {
+  color: #ffffff;
 }
