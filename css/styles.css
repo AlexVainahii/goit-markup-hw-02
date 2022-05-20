@@ -1,13 +1,13 @@
 :root {
   --primary-text-color: #212121;
-  --akcent-text-color: #2196f3;
+  --accent-text-color: #2196f3;
   --secondary-text-color: #757575;
   --primary-background-color: #2f303a;
-  --secondary-background-color: #ececec;
-  --primary-btn-text-color: #ffffff;
-  --akcent-btn-text-color: #000000;
-  --primary-btn-background-color: #2196f3;
-  --akcent-btn-background-color: #188ce8;
+  --background-color: #ffffff;
+  --accent-btn-text-color: #000000;
+  --accent-btn-background-color: #188ce8;
+  --team-background-color: #f5f4fa;
+  --contact-color: rgba(255, 255, 255, 0.6);
 }
 
 .link {
@@ -33,22 +33,23 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
 }
 /* ----------------HEADER------------------- */
-.header {
-  background-color: var(--secondary-background-color);
-}
-.header-logo {
-  font-family: "Raleway";
+
+.header-logo,
+.footer-logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--akcent-text-color);
+  color: var(--accent-text-color);
   cursor: pointer;
 }
+
 .header-logo-text {
-  color: var(--akcent-btn-text-color);
+  color: var(--accent-btn-text-color);
 }
 .header-nav-link,
 .header-contact-link {
@@ -61,13 +62,23 @@ body {
   cursor: pointer;
 }
 .header-contact-link {
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
 }
 .current,
 .header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--akcent-text-color);
+.header-contact-link:focus,
+.adress-item-link:hover,
+.adress-item-link:focus {
+  color: var(--accent-text-color);
   cursor: pointer;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 /* ----------------HERO------------------- */
 .hero {
@@ -80,10 +91,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-btn-text-color);
+  color: var(--background-color);
 }
 .hero-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -92,13 +103,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--primary-btn-background-color);
-  color: var(--primary-btn-text-color);
+  background-color: var(--accent-text-color);
+  color: var(--background-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--akcent-btn-background-color);
-  color: var(--akcent-btn-text-color);
+  background-color: var(--accent-btn-background-color);
 }
 /* ----------------Tasks------------------- */
 
@@ -118,55 +128,34 @@ body {
   color: var(--secondary-text-color);
 }
 /* ----------------Portfolio------------------- */
-.portfolio-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
+
 /* ----------------Team------------------- */
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+.team {
+  background-color: var(--team-background-color);
+}
+.team-list-item {
+  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .team-item-title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .team-item-text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 /* ----------------Footer------------------- */
 .footer {
   background-color: var(--primary-background-color);
 }
-.footer-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--akcent-text-color);
-  cursor: pointer;
-}
+
 .footer-logo-tekst {
-  color: var(--primary-btn-text-color);
+  color: var(--background-color);
 }
 
 .adress-item-link {
@@ -175,8 +164,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-color);
 }
 .adress {
-  color: var(--primary-btn-text-color);
+  color: var(--background-color);
 }
