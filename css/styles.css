@@ -12,7 +12,6 @@
 
 .link {
   text-decoration: none;
-  font-style: inherit;
   color: inherit;
 }
 .list {
@@ -58,32 +57,24 @@ body {
 }
 .header-nav-link,
 .header-contact-link {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* color: var(--primary-text-color); */
 }
 .header-contact-link {
   color: var(--secondary-text-color);
 }
 .current,
+.header-nav-link:hover,
+.header-nav-link:focus,
 .header-contact-link:hover,
 .header-contact-link:focus,
 .address-item-link:hover,
 .address-item-link:focus {
   color: var(--accent-text-color);
-  cursor: pointer;
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  /* color: var(--primary-text-color); */
-}
+
 /* ----------------HERO------------------- */
 .hero {
   background-color: var(--primary-background-color);
@@ -122,23 +113,25 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 .tasks-item-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 /* ----------------Portfolio------------------- */
-
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 /* ----------------Team------------------- */
 .team {
   background-color: var(--team-background-color);
 }
 .team-list-item {
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -147,10 +140,11 @@ body {
 
 .team-item-title {
   font-weight: 500;
-  color: var(--primary-text-color);
+  font-size: 16px;
 }
 .team-item-text {
   font-weight: 400;
+  font-size: 16px;
   color: var(--secondary-text-color);
 }
 /* ----------------Footer------------------- */
@@ -185,12 +179,13 @@ body {
   background-color: var(--team-background-color);
   cursor: pointer;
 }
-.current-filter {
+.current-filter,
+.portfolio-filter:hover,
+.portfolio-filter:focus {
   color: var(--background-color);
   background-color: var(--accent-text-color);
 }
 .portfolio-item-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -201,5 +196,5 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: -var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
