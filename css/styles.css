@@ -187,8 +187,6 @@ body {
   color: var(--background-color);
   background-color: var(--accent-text-color);
 }
-.potfolio-project-item {
-}
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
