@@ -7,7 +7,7 @@
   --primary-btn-text-color: #ffffff;
   --akcent-btn-text-color: #000000;
   --primary-btn-background-color: #2196f3;
-  --akcent-btn-background-color: #ffffff;
+  --akcent-btn-background-color: #188ce8;
 }
 
 .link {
@@ -48,7 +48,7 @@ body {
   cursor: pointer;
 }
 .header-logo-text {
-  color: #000000;
+  color: var(--akcent-btn-text-color);
 }
 .header-nav-link,
 .header-contact-link {
@@ -80,7 +80,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-btn-text-color);
 }
 .hero-btn {
   font-family: "Roboto";
@@ -166,7 +166,7 @@ body {
   cursor: pointer;
 }
 .footer-logo-tekst {
-  color: #ffffff;
+  color: var(--primary-btn-text-color);
 }
 
 .adress-item-link {
@@ -178,5 +178,5 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .adress {
-  color: #ffffff;
+  color: var(--primary-btn-text-color);
 }
